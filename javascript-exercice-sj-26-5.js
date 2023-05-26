@@ -48,7 +48,6 @@ const getCategoryPath = (categories, categoryName) => {
 
 const testFunction = (categories, testCases) => {
   console.log('Running tests...')
-
   for (let i in testCases) {
     let test = testCases[i]
     let result = getCategoryPath(categories, test.categoryName)
@@ -57,10 +56,8 @@ const testFunction = (categories, testCases) => {
     } else {
       console.log(`Error: Test number ${+i + 1}: Expected ${test.result}, got : ${result} `)
     }
-
   }
   console.log('Running tests done')
-
 }
 
 console.log(testFunction(categories, testCases))
